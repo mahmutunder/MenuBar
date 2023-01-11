@@ -17,6 +17,9 @@ public class MenuBar extends JFrame implements ActionListener {
     JMenuItem exitItem;
 
     JLabel label;
+    ImageIcon open;
+    ImageIcon save;
+    ImageIcon close;
 
 
     public MenuBar(){
@@ -49,6 +52,16 @@ public class MenuBar extends JFrame implements ActionListener {
         openItem.setMnemonic(KeyEvent.VK_O);
         saveItem.setMnemonic(KeyEvent.VK_S);
         exitItem.setMnemonic(KeyEvent.VK_E);
+
+        // add icon
+        open= new ImageIcon("opened.png");
+        save= new ImageIcon("save.png");
+        close= new ImageIcon("close.png");
+
+        openItem.setIcon(open);
+        saveItem.setIcon(save);
+        exitItem.setIcon(close);
+
 
 
         // add menu-items to menu
